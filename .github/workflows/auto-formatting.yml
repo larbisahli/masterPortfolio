@@ -1,7 +1,7 @@
 name: auto-format
 on: pull_request
 env:
- GH_USERNAME: ${{ github.event.schedule.user.login }}
+ GH_USERNAME: ${{ github.actor }}
 jobs:
   format:
     # Check if the PR is not from a fork
